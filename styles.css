@@ -806,13 +806,16 @@ textarea {
 }
 
 .main-footer {
-  background: #000;
-  color: #fff;
+  color: #000;
+  background: #fff;
 }
 .main-footer__upper {
   display: flex;
   justify-content: space-between;
   padding: 8rem 0;
+}
+.main-footer__icon {
+  filter: invert(1) grayscale(100%) brightness(0);
 }
 @media only screen and (max-width: 56.25em) {
   .main-footer__upper {
@@ -844,7 +847,7 @@ textarea {
 }
 .main-footer__short-desc {
   margin-top: 2rem;
-  color: #eee;
+  color: #000;
   font-size: 1.5rem;
   line-height: 1.7;
 }
@@ -860,8 +863,8 @@ textarea {
 }
 .main-footer__lower {
   padding: 4rem 0;
-  border-top: 1px solid #444;
-  color: #eee;
+  border-top: 1px solid #777;
+  color: #000;
   font-size: 1.2rem;
   text-align: left;
   text-align: center;
@@ -890,6 +893,11 @@ textarea {
   border-radius: 5px;
   font-weight: 600;
   color: #777;
+  transition: transform 0.3s ease;
+}
+.skills__skill:hover{
+  transform: translateY(-3px);
+  cursor: default;
 }
 
 .mouse {
@@ -965,14 +973,12 @@ textarea {
 
 @media (max-width: 768px) {
   .experience__row-skill {
-    font-size: 0.9rem;
     padding: 6px 12px;
   }
 }
 
 @media (max-width: 480px) {
   .experience__row-skill {
-    font-size: 0.85rem;
     padding: 5px 10px;
   }
 }
