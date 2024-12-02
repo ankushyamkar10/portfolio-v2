@@ -816,9 +816,6 @@ textarea {
   justify-content: space-between;
   padding: 8rem 0;
 }
-.main-footer__icon {
-  filter: invert(1) grayscale(100%) brightness(0);
-}
 @media only screen and (max-width: 56.25em) {
   .main-footer__upper {
     padding: 6rem 0;
@@ -985,13 +982,13 @@ textarea {
 
 
 .experience__row-skill {
-  background-color: #3498db;  /* Primary Blue */
+  background-color: #0062b9;  /* Primary Blue */
   color: white;
   padding: 8px 16px;
   border-radius: 25px;  /* Rounded corners */
   font-size: 1.3rem;
   font-weight: 500;
-  border: 1px solid #2980b9;
+  border: 1px solid #0062b9;
   cursor: pointer;
   text-transform: capitalize;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -999,7 +996,7 @@ textarea {
 
 .experience__row-skill:hover {
   background-color: #fafafa;
-  color: #2980b9;  /* Darker Blue */
+  color: #0062b9;  /* Darker Blue */
   transform: translateY(-3px);  /* Slight lift effect */
 }
 
@@ -1089,7 +1086,7 @@ textarea {
 }
 
 .achievements-list li > .achievement-header strong {
-  color: #2980b9;
+  color: #0062b9;
   font-weight: 600;
   font-size: 2rem;
   margin-left: 10px;
@@ -1111,7 +1108,7 @@ textarea {
 .achievements-list li:hover {
   transform: translateY(-10px);
   cursor: pointer;
-  border: 1px solid #2980b9;
+  border: 1px solid #0062b9;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
