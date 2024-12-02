@@ -887,6 +887,7 @@ textarea {
   flex-wrap: wrap;
 }
 .skills__skill {
+  display: flex;
   padding: 1rem 2rem;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
@@ -897,9 +898,38 @@ textarea {
   color: #777;
   transition: transform 0.3s ease;
 }
-.skills__skill:hover{
+
+.skills__icon {
+  width: 2rem; /* Size of the icon */
+  height: 2rem; /* Size of the icon */
+  margin-right: 1rem; /* Space between the icon and text */
+  transition: filter 0.3s ease; /* Smooth transition on hover */
+  display: none;
+}
+
+.skills__skill {
+  display: flex;
+  align-items: center; /* Align items horizontally */
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.6rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #777;
+  transition: transform 0.3s ease;
+}
+
+.skills__skill:hover {
   transform: translateY(-3px);
-  cursor: default;
+  cursor: pointer;
+}
+
+/* When the skill container is hovered, make the icon colorful */
+.skills__skill:hover .skills__icon {
+  display: block;
+  filter: grayscale(0%) invert(0%) brightness(100%); /* Colorful on hover */
 }
 
 .mouse {
